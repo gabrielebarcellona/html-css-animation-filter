@@ -105,21 +105,38 @@ height: 150px;
 
 .ex-10-icon {
     font-size: 60px;
-    animation-name: spin;
-    animation: infinite;
-    animation: linear;
-    animation: 1s;
+    animation: spin 1s linear infinite
+   
 }
 
 @keyframes spin {
 0% {
-  transform: rotate(1turn);
+  transform: rotate(360deg);
 }
 }
 
 .ex-11-icon {
     font-size: 60px;
+}  
+
+.ex-11-icon:hover {
+    font-size: 60px;
+    animation: spinn 3s linear;
+}  
+
+@keyframes spinn {
+    0%{
+        transform: rotate(0);
+    }
+    90%{
+        transform: rotate(320deg);
+    }
+    100%{
+        transform: rotate(0);
+    }
 }
+
+
 .ex-12-button, .ex-13-button {
     position: relative;
     display: block;
